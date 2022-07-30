@@ -1,0 +1,26 @@
+﻿@model Project_Testing.Models.Hangsanxuat
+
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Hãng sản xuất</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên hãng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tenhang)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Mahang }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

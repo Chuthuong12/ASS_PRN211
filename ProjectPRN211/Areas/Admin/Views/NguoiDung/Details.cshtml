@@ -1,0 +1,58 @@
+﻿@model Project_Testing.Models.Nguoidung
+
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<h2>Chi tiết người dùng</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Họ và tên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hoten)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            Điện thoại
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dienthoai)
+        </dd>
+
+        <dt>
+            Mật khẩu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Matkhau)
+        </dd>
+
+        <dt>
+            Phân quyền
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdquyenNavigation.TenQuyen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaNguoiDung }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

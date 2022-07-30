@@ -1,0 +1,175 @@
+﻿@{
+    Layout = "~/Views/Share/_Layout.cshtml";
+}
+@using ProjectPRN211.Models;
+<!-- SingLe Product  -->
+<div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Shop</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-sidebar">
+                        <h2 class="sidebar-title">Search Products</h2>
+                        <form action="">
+                            <input type="text" placeholder="Search products...">
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
+                    
+                    <div class="single-sidebar">
+                        <h2 class="sidebar-title">Products</h2>
+                    @foreach (var v in @ViewBag.SanPhamm)
+                    {
+                         <div class="thubmnail-recent">
+                            <img src="@v.Anhbia" class="recent-thumb" alt="">
+                            <h2><a href="">@v.Tensp</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>@v.Giatien</ins> 
+                            </div> 
+                          
+                        </div>
+                    }
+                   
+                        
+                    </div>
+                    
+                    <div class="single-sidebar">
+                        <h2 class="sidebar-title">Recent Posts</h2>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="product-content-right">
+                    @foreach (var v in @ViewBag.SanPhamm)
+                    {
+                        <div class="product-breadcroumb">
+                            <a href="">Home</a>
+                            <a href="">Category Name</a>
+                            <a href=""></a>
+                        </div>
+                    }
+                    
+                        
+                        <div class="row">
+                            <div class="col-sm-6">
+
+                                <div class="product-images">
+                                @foreach (var v in @ViewBag.SanPhamm)
+                                {
+                                    <div class="product-main-img">
+                                        <img src="@v.Anhbia" alt="">
+                                    </div>
+                                }
+                                
+                                    
+                                    <div class="product-gallery">
+                                        <img src="img/product-thumb-1.jpg" alt="">
+                                        <img src="img/product-thumb-2.jpg" alt="">
+                                        <img src="img/product-thumb-3.jpg" alt="">
+                                        <img src="img/product-thumb-4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="product-inner">
+                                    @foreach (var v in @ViewBag.SanPhamm)
+                                   {
+                                       <h2 class="product-name">@v.Tensp</h2>
+                                    <div class="product-inner-price">
+                                        <ins>$ @v.Giatien</ins> 
+                                    </div>  
+                                    <div><img src="@v.Anhbia" class="recent-thumb" alt=""></div>
+                                   }
+                                    
+                                    
+                                    <form action="" class="cart">
+                                        <div class="quantity">
+                                            @foreach (var item in ViewBag.SanPhamm )
+                                           {
+                                               <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" max="@item.Soluong" step="1">
+                                           }
+                                            
+                                        </div>
+                                        <button class="add_to_cart_button" type="submit">Add to cart</button>
+                                    </form>   
+                                    @foreach (var item in @ViewBag.SanPhamm)
+                                   {
+                                      <div class="product-inner-category">
+                                        <p>Ram @item.Ram  <a href="">Bộ Nhớ: @item.Bonhotrong </a>. <a href="">Thẻ Sim: @item.Thesim</a> </p>
+                                    </div> 
+                                   }
+                                     
+                                    
+                                    <div role="tabpanel">
+                                        <ul class="product-tab" role="tablist">
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            
+                                            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                            @foreach (var v in @ViewBag.SanPhamm)
+                                            {
+                                            <h2>Product Description</h2>  
+                                                <p>@v.Mota</p>
+                                            }
+                                            </div>
+                                   
+                                            <div role="tabpanel" class="tab-pane fade" id="profile">
+                                                <h2>Reviews</h2>
+                                                     <form>
+
+                                                    <div class="submit-review">
+                                                    <p><label for="name">Name</label> <input name="name" type="text"></p>
+                                                    <p><label for="email">Email</label> <input name="email" type="email"></p>
+                                                    <div class="rating-chooser">
+                                                        <p>Your rating</p>
+
+                                                        <div class="rating-wrap-post">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p><label for="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
+                                                    <p><input type="submit" value="Submit"></p>
+                                                </div>
+
+                                            </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                                    
+                                </div>                                    
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>

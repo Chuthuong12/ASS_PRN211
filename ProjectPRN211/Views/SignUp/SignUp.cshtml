@@ -1,0 +1,33 @@
+﻿<div class="row justify-content-md-center" style="margin-top:70px; color:red;">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div class="card" style="text-align:center">
+            <h1 style="text-align:center;">SignUp</h1>
+            <form asp-controller="SignUp" asp-action="SignUp" method="post">
+                <div class="card-body">
+                    <span style="color:red;"></span>@ViewBag.mess
+                    <span style="color:red;"></span>@ViewBag.test
+                    <span style="color:red;"></span>@ViewBag.test1
+                    <div class="form-group">
+                        <h4>Tài khoản</h4>
+                        <input type="text" name="user"/>
+                    </div>
+                    <div class="form-group">
+                        <h4>Mật Khẩu</h4>
+                        <input type="password" name="pass"/>
+                    </div>
+                    <div class="form-group">
+                        <h4>Nhập lại mật Khẩu</h4>
+                        <input type="password" name="repass"/>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-primary" value="Login" />
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>

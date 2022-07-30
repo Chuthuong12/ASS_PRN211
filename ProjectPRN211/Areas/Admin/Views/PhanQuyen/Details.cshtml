@@ -1,0 +1,26 @@
+﻿@model Project_Testing.Models.PhanQuyen
+
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<h2>Chi tiết</h2>
+
+<div>
+    <h4>Phân quyền</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Tên quyền
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenQuyen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Idquyen }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

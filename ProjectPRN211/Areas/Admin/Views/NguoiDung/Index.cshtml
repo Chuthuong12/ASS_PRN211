@@ -1,0 +1,61 @@
+﻿@using Project_Testing.Models
+@model List<Nguoidung>
+
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<h2>Quản lý người dùng</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>
+            Họ và tên
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Điện thoại
+        </th>
+        <th>
+            Mật khẩu
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Phân quyền
+        </th>
+        <th> Hành động</th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @item.Hoten
+    </td>
+    <td>
+        @item.Email
+    </td>
+    <td>
+        @item.Dienthoai
+    </td>
+    <td>
+        @item.Matkhau
+    </td>
+    <td>
+        @item.Diachi
+    </td>
+    <td>
+@*        @Html.DisplayFor(modelItem => item.IdquyenNavigation.TenQuyen)*@
+    </td>
+    <td>
+        @Html.ActionLink("Sửa", "Edit", new { id = item.MaNguoiDung }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id = item.MaNguoiDung }) |
+        @Html.ActionLink("Xoá", "Delete", new { id = item.MaNguoiDung })
+    </td>
+</tr>
+}
+
+</table>

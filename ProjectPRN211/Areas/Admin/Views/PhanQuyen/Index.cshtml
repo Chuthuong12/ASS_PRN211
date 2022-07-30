@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Project_Testing.Models.PhanQuyen>
+
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<h2>Quyền truy cập</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới quyền", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Tên Quyền
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @item.Idquyen
+    </td>
+    <td>
+        @item.TenQuyen
+    </td>
+    <td>
+        @Html.ActionLink("Sửa", "Edit", new { id = item.Idquyen }) |
+        @Html.ActionLink("Chi tiết", "Details", new { id = item.Idquyen }) |
+        @Html.ActionLink("Xoá", "Delete", new { id = item.Idquyen })
+    </td>
+</tr>
+}
+
+</table>

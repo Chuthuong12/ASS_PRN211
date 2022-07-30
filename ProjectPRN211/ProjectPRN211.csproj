@@ -1,0 +1,116 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\.vs\ProjectSettings.json" />
+    <Content Include="wwwroot\.vs\VSWorkspaceState.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\.vs\eElectronics - Ecommerce HTML Template\config\applicationhost.config" />
+    <None Include="wwwroot\.vs\eElectronics - Ecommerce HTML Template\FileContentIndex\978d7d13-e1fd-4def-9bbe-159df7327425.vsidx" />
+    <None Include="wwwroot\.vs\eElectronics - Ecommerce HTML Template\FileContentIndex\read.lock" />
+    <None Include="wwwroot\.vs\slnx.sqlite" />
+    <None Include="wwwroot\Assets\.browserslistrc" />
+    <None Include="wwwroot\Assets\.gitignore" />
+    <None Include="wwwroot\Assets\.travis.yml" />
+    <None Include="wwwroot\Assets\dist\401.html" />
+    <None Include="wwwroot\Assets\dist\404.html" />
+    <None Include="wwwroot\Assets\dist\500.html" />
+    <None Include="wwwroot\Assets\dist\assets\demo\chart-area-demo.js" />
+    <None Include="wwwroot\Assets\dist\assets\demo\chart-bar-demo.js" />
+    <None Include="wwwroot\Assets\dist\assets\demo\chart-pie-demo.js" />
+    <None Include="wwwroot\Assets\dist\assets\demo\datatables-demo.js" />
+    <None Include="wwwroot\Assets\dist\assets\img\error-404-monochrome.svg" />
+    <None Include="wwwroot\Assets\dist\charts.html" />
+    <None Include="wwwroot\Assets\dist\css\stylesKA.css" />
+    <None Include="wwwroot\Assets\dist\index.html" />
+    <None Include="wwwroot\Assets\dist\js\scripts.js" />
+    <None Include="wwwroot\Assets\dist\layout-sidenav-light.html" />
+    <None Include="wwwroot\Assets\dist\layout-static.html" />
+    <None Include="wwwroot\Assets\dist\login.html" />
+    <None Include="wwwroot\Assets\dist\password.html" />
+    <None Include="wwwroot\Assets\dist\register.html" />
+    <None Include="wwwroot\Assets\dist\tables.html" />
+    <None Include="wwwroot\Assets\LICENSE" />
+    <None Include="wwwroot\Assets\README.md" />
+    <None Include="wwwroot\Assets\scripts\build-assets.js" />
+    <None Include="wwwroot\Assets\scripts\build-pug.js" />
+    <None Include="wwwroot\Assets\scripts\build-scripts.js" />
+    <None Include="wwwroot\Assets\scripts\build-scss.js" />
+    <None Include="wwwroot\Assets\scripts\clean.js" />
+    <None Include="wwwroot\Assets\scripts\render-assets.js" />
+    <None Include="wwwroot\Assets\scripts\render-pug.js" />
+    <None Include="wwwroot\Assets\scripts\render-scripts.js" />
+    <None Include="wwwroot\Assets\scripts\render-scss.js" />
+    <None Include="wwwroot\Assets\scripts\sb-watch.js" />
+    <None Include="wwwroot\Assets\scripts\start-debug.js" />
+    <None Include="wwwroot\Assets\scripts\start.js" />
+    <None Include="wwwroot\Assets\src\assets\demo\chart-area-demo.js" />
+    <None Include="wwwroot\Assets\src\assets\demo\chart-bar-demo.js" />
+    <None Include="wwwroot\Assets\src\assets\demo\chart-pie-demo.js" />
+    <None Include="wwwroot\Assets\src\assets\demo\datatables-demo.js" />
+    <None Include="wwwroot\Assets\src\assets\img\error-404-monochrome.svg" />
+    <None Include="wwwroot\Assets\src\js\scripts.js" />
+    <None Include="wwwroot\Assets\src\pug\layouts\authentication.pug" />
+    <None Include="wwwroot\Assets\src\pug\layouts\dashboard.pug" />
+    <None Include="wwwroot\Assets\src\pug\layouts\error.pug" />
+    <None Include="wwwroot\Assets\src\pug\layouts\includes\footer.pug" />
+    <None Include="wwwroot\Assets\src\pug\layouts\includes\head\css.pug" />
+    <None Include="wwwroot\Assets\src\pug\layouts\includes\head\icons.pug" />
+    <None Include="wwwroot\Assets\src\pug\layouts\includes\head\meta.pug" />
+    <None Include="wwwroot\Assets\src\pug\layouts\includes\head\title.pug" />
+    <None Include="wwwroot\Assets\src\pug\layouts\includes\navigation\sidenav.pug" />
+    <None Include="wwwroot\Assets\src\pug\layouts\includes\navigation\topnav.pug" />
+    <None Include="wwwroot\Assets\src\pug\layouts\includes\scripts.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\401.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\404.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\500.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\charts.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\includes\datatable.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\includes\page-header.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\index.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\layout-sidenav-light.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\layout-static.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\login.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\password.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\register.pug" />
+    <None Include="wwwroot\Assets\src\pug\pages\tables.pug" />
+    <None Include="wwwroot\Assets\src\scss\layout\_authentication.scss" />
+    <None Include="wwwroot\Assets\src\scss\layout\_dashboard-default.scss" />
+    <None Include="wwwroot\Assets\src\scss\layout\_dashboard-fixed.scss" />
+    <None Include="wwwroot\Assets\src\scss\layout\_error.scss" />
+    <None Include="wwwroot\Assets\src\scss\navigation\sidenav\_sidenav-dark.scss" />
+    <None Include="wwwroot\Assets\src\scss\navigation\sidenav\_sidenav-light.scss" />
+    <None Include="wwwroot\Assets\src\scss\navigation\sidenav\_sidenav.scss" />
+    <None Include="wwwroot\Assets\src\scss\navigation\_nav.scss" />
+    <None Include="wwwroot\Assets\src\scss\navigation\_topnav.scss" />
+    <None Include="wwwroot\Assets\src\scss\styles.scss" />
+    <None Include="wwwroot\Assets\src\scss\variables\_navigation.scss" />
+    <None Include="wwwroot\Assets\src\scss\variables\_spacing.scss" />
+    <None Include="wwwroot\Assets\src\scss\_global.scss" />
+    <None Include="wwwroot\Assets\src\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\HangSanXuat\" />
+    <Folder Include="wwwroot\.vs\eElectronics - Ecommerce HTML Template\FileContentIndex\merges\" />
+    <Folder Include="wwwroot\.vs\eElectronics - Ecommerce HTML Template\v17\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<br />
+<div class="row justify-content-md-center" style="margin-top:70px; color:red;">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div class="card" style="text-align:center">
+            <h1 style="text-align:center;">Login</h1>
+            <form asp-controller="Login" asp-action="Login" method="post">
+                <div class="card-body">
+                    <span style="color:red;"></span>@ViewBag.User
+                    <div class="form-group">
+                        <h4>Tài khoản</h4>
+                        <input type="text" name="user"/>
+                    </div>
+                    <div class="form-group">
+                        <h4>Mật Khẩu</h4>
+                        <input type="password" name="pass"/>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-primary" value="Login" />
+                    </div>
+                </div>
+            </form>
+            <a asp-action="SignUp" asp-controller="SignUp">Sign Up</a>
+        </div>
+    </div>
+    
+</div>
